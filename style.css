@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: hsl(30, 38%, 92%);
@@ -20,11 +21,10 @@ body {
 .card {
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 500px;
     background-color: rgb(255, 255, 255);
     margin: auto;
     border-radius: 5%;
-    min-width: 500px;
     
 
 }
@@ -125,24 +125,23 @@ button:hover {
     display: none;
 }
 
-@media(max-width:375px) {
-    body {
-        height: 100%;
-        width: 50%;
-    }
+@media(max-width:500px) {
+  
 
     .card {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 90%;
         background-color: rgb(255, 255, 255);
         margin: auto;
         border-radius: 5%;
+        margin-top: 30px;
 
     }
 
     .left-info {
         width: 100%;
+        border-radius: 5%;
     }
 
     .no-responsive {
@@ -153,6 +152,8 @@ button:hover {
     .responsive {
         display: block;
         width: 100%;
+        border-radius: 5% 5% 0% 0%;
+
 
     }
 
@@ -219,7 +220,7 @@ button:hover {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        padding: 20px;
+        padding: 10px;
         background-color: hsl(158, 36%, 37%);
         text-align: center;
         font-family: "Montserrat", sans-serif;
@@ -227,7 +228,7 @@ button:hover {
         font-weight: 700;
         font-style: normal;
         margin: auto;
-        width: 70%;
+        width: 50%;
         border-radius: 10px;
         border: 0;
         color: white;
